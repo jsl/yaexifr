@@ -1,0 +1,33 @@
+= Yet Another EXIF Reader (yaexifr) 
+Just another Ruby EXIF library that reads EXIF data from audio, video and images. It wraps the lovely ExifTool 
+library (http://www.sno.phy.queensu.ca/~phil/exiftool/). It's really simple (at least for now) and just adds
+an exif() method to File's instance methods that returns a hash of available data.
+
+No Win support yet.
+
+== Examples
+  >> f = File.open('erlang.pdf', 'r')
+  => #<File:/erlang.pdf>
+  >> f.exif
+  => {"Create Date"=>"2007", 
+      "Producer"=>"dvips + AFPL Ghostscript 8.54 / PDF PT 2.37 (pdf-tools.com)", 
+      "Subject"=>"", 
+      "File Type"=>"PDF", 
+      "Modify Date"=>"2008", 
+      "ExifTool Version Number"=>"7.39", 
+      "File Modification Date/Time"=>"2008", 
+      "Author"=>"The Pragmatic Bookshelf (55618)", 
+      "Creator"=>"LaTeX with hyperref package", 
+      "File Size"=>"4 MB", 
+      "Title"=>"Programming Erlang", 
+      "MIME Type"=>"application/pdf", 
+      "Directory"=>"/Users/tzaharia/Desktop", 
+      "Page Count"=>"526", 
+      "File Name"=>"erlang.pdf", 
+      "PDF Version"=>"1.4"}
+
+== Author
+Tieg Zaharia
+
+== Copyright
+Copyright (c) 2008 - Tieg Zaharia
