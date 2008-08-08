@@ -21,7 +21,7 @@ No Win support yet.
       "File Size"=>"4 MB", 
       "Title"=>"Programming Erlang", 
       "MIME Type"=>"application/pdf", 
-      "Directory"=>"/Users/tzaharia/Desktop", 
+      "Directory"=>"/", 
       "Page Count"=>"526", 
       "File Name"=>"erlang.pdf", 
       "PDF Version"=>"1.4"}
