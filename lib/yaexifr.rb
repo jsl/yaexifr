@@ -1,3 +1,4 @@
+require 'tempfile'
 require File.dirname(__FILE__) + '/file_extensions'
 require File.dirname(__FILE__) + '/errors'
 
@@ -8,3 +9,4 @@ module YAEXIFR
 end
 
 File.send(:include, YAEXIFR::Extensions::File::EXIF)
+Tempfile.send(:include, YAEXIFR::Extensions::File::EXIF)

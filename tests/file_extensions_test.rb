@@ -19,5 +19,4 @@ class FileExtensionsTest < Test::Unit::TestCase
    assert_equal "960", file.exif['width']
    assert_equal "540", file.exif['height']
   end
-
 end
